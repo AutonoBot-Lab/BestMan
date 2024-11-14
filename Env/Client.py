@@ -50,9 +50,9 @@ class Client:
         else:
             self.client_id = p.connect(p.DIRECT)
 
-        p.configureDebugVisualizer(1, lightPosition=(5, 0, 5), rgbBackground=(1, 1, 1))   # set light and background
         if cfg.enable_Debug:
-            if cfg.shadows:
+             p.configureDebugVisualizer(1, lightPosition=(5, 0, 5), rgbBackground=(1,1,1))   # set light and background
+             if cfg.shadows:
                 p.configureDebugVisualizer(p.COV_ENABLE_SHADOWS, 1)  # enable shadows
                 p.configureDebugVisualizer(
                     p.COV_ENABLE_SEGMENTATION_MARK_PREVIEW, 0
