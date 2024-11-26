@@ -1,4 +1,7 @@
 - [bullet3](https://github.com/bulletphysics/bullet3): We refer to panda and xarm robotic arms and the xarm gripper,the underlying simulation is driven by the pybullet engine.
+- [PartNet Mobility dataset](https://sapien.ucsd.edu/browse): We use articulated urdf objects from PartNet Mobility dataset.
+- [pybullet-URDF-models](https://github.com/ChenEating716/pybullet-URDF-models): We use rigid urdf objects from pybullet-URDF-models.
+- [YCB dataset](http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/): We use rigid 3D models from YCB dataset.
 - [urdf_files_dataset](https://github.com/Daniella1/urdf_files_dataset): We refer to ur5e arm from urdf_files_dataset.
 - [flexiv_rdk](https://github.com/flexivrobotics/flexiv_rdk): We refer to flexiv arm from flexiv_rdk.
 - [mycobot_ros](https://github.com/elephantrobotics/mycobot_ros): We refer to elephant arm from mycobot_ros.
@@ -14,9 +17,8 @@
 - [isort](https://github.com/PyCQA/isort): We used the isort tool to standardize library imports.
 - [black](https://github.com/psf/black): We use the clack tool to standardize code style.
 - [pre-commit](https://github.com/pre-commit/pre-commit): We use pre-commit to automatically run code checks before committing changes.
-- [kitchen-worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds): We refer to the scene generation method and asset resources of kitchen_world.
+- [kitchen-worlds](https://github.com/Learning-and-Intelligent-Systems/kitchen-worlds): We refer to the scene generation method and scene data of kitchen_world.
 - [pybullet_ur5_robotiq](https://github.com/ElectronicElephant/pybullet_ur5_robotiq): We refer to the gripper model and control of pybullet_ur5_robotiq.
-- [pybullet-URDF-models](https://github.com/ChenEating716/pybullet-URDF-models): We use URDF models of pybullet-URDF-models.
-- [urdformer](https://github.com/WEIRDLabUW/urdformer): We refer to urdf generate method and use asset urdf models of urdformer.
-- [PartNet Mobility dataset](https://sapien.ucsd.edu/browse): We use urdf asset resources of PartNet Mobility dataset.
-- [YCB dataset](http://ycb-benchmarks.s3-website-us-east-1.amazonaws.com/): We use rigid object asset of YCB dataset.
+- [urdformer](https://github.com/starry521/urdformer.git): We integrate urdformer submodule to generate 3D urdf models from 2D images.
+- [acdc](https://github.com/starry521/digital-cousins.git): We integrate digital cousins submodule to create 3D scene from 2D images.
+- [pddlstream](https://github.com/starry521/pddlstream.git): We integrate pddlstream submodule to task planing.
