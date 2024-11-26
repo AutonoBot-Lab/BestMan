@@ -122,10 +122,10 @@ class AStarPlanner:
 
         # Make sure the positions are within the environment and not on the table
         assert (
-            0 <= start_grid[0] < n_points_x and 0 <= start_grid[1] < n_points_y
+            -n_points_x <= start_grid[0] < n_points_x and -n_points_y <= start_grid[1] < n_points_y
         ), "Initial base position is out of boundary!"
         assert (
-            0 <= goal_grid[0] < n_points_x and 0 <= goal_grid[1] < n_points_y
+            -n_points_x <= goal_grid[0] < n_points_x and -n_points_y <= goal_grid[1] < n_points_y
         ), "Goal base position is out of boundary!"
         assert (
             self.static_map[start_grid[0], start_grid[1]] != 1
