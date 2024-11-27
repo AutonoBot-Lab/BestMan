@@ -77,6 +77,24 @@ class Pose:
             raise ValueError(
                 "[Pose] \033[31merror\033[0m: Orientation type must be 'quaternion', 'euler', or 'rotation_matrix'"
             )
+            
+    def get_pose(self, type="quaternion"):
+        """
+        get pose list(pos+orn)
+
+        Returns:
+            array: [pos, orn]
+        """
+        if type == "quaternion":
+            return [self.pose, self.orientation]
+        elif type == "euler":
+            return [self.pose, R.from_quat(self.orientation).as_euler("xyz", degrees=False)]
+        elif type == "rotation_matrix":
+            return [self.pose, R.from_quat(self.orientation).as_matrix()]
+        else:
+            raise ValueError(
+                "[Pose] \033[31merror\033[0m: Orientation type must be 'quaternion', 'euler', or 'rotation_matrix'"
+            )
 
     def print(self, pose_description="", type="quaternion"):
         """
