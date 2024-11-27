@@ -9,7 +9,7 @@
 1. Pull the repository and update the submodule
 
 ```
-git clone --recurse-submodules https://github.com/AutonoBot-Lab/BestMan_Pybullet.git
+git clone https://github.com/AutonoBot-Lab/BestMan_Pybullet.git
 cd BestMan_Pybullet
 git submodule update --init --recursive
 ```
