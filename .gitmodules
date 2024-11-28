@@ -29,3 +29,7 @@
 [submodule "pddlstream"]
 	path = Task_Planning/pddlstream
 	url = https://github.com/starry521/pddlstream.git
+
+[submodule "LLM_P"]
+	path = Task_Planning/LLM_P
+	url = https://github.com/starry521/llm-pddl.git
