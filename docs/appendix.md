@@ -22,3 +22,4 @@
 - [urdformer](https://github.com/starry521/urdformer.git): We integrate urdformer submodule to generate 3D urdf models from 2D images.
 - [acdc](https://github.com/starry521/digital-cousins.git): We integrate digital cousins submodule to create 3D scene from 2D images.
 - [pddlstream](https://github.com/starry521/pddlstream.git): We integrate pddlstream submodule to task planing.
+- [LLM+P](https://github.com/starry521/llm-pddl): We integrate LLM+P submodules to utilize LLM to guide task planning.
