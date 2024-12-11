@@ -1,0 +1,3 @@
+Client:
+  enable_GUI: False
+  blender: False
