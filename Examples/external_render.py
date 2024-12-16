@@ -19,7 +19,7 @@ from Visualization import Visualizer
 def main(filename):
 
     # Load config
-    config_path = "Config/blender_render.yaml"
+    config_path = "Config/external_render.yaml"
     cfg = load_config(config_path)
     print(cfg)
 

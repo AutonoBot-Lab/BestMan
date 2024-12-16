@@ -25,8 +25,8 @@ from Robotics_API import Pose
 from Visualization.blender_render import PyBulletRecorder
 
 from pybullet_rendering import RenderingPlugin
-from pybullet_rendering.render.panda3d import P3dRenderer # panda3d-based renderer
-from pybullet_rendering.render.pyrender import PyrRenderer # pyrender-based renderer
+from pybullet_rendering.render.panda3d import P3dRenderer   # panda3d-based renderer
+from pybullet_rendering.render.pyrender import PyrRenderer  # pyrender-based renderer
 
 
 class Client:
@@ -55,7 +55,8 @@ class Client:
             self.client_id = p.connect(p.DIRECT)
 
         # bind your renderer to pybullet
-        renderer = P3dRenderer(multisamples=4) # or PyrRenderer(platform='egl', egl_device=1)
+        # renderer = P3dRenderer(multisamples=4)
+        renderer = PyrRenderer(platform='egl')
         plugin = RenderingPlugin(self.client_id, renderer)
 
         if cfg.enable_Debug:
@@ -89,10 +90,7 @@ class Client:
         plane_path = cfg.plane_urdf_path
         if plane_path.startswith("Asset"):
             os.path.join("..", plane_path)
-        # p.loadURDF(cfg.plane_urdf_path, flags=self.enable_cache)
-
-        # render thru the standard pybullet API
-        # w, h, rgba, depth, mask = p.getCameraImage(w, h, projectionMatrix=..., viewMatrix=...)
+        p.loadURDF(cfg.plane_urdf_path, flags=self.enable_cache)
 
         # pybullet data
         self.pybullet_data = pybullet_data.getDataPath()
