@@ -56,8 +56,8 @@ class Client:
 
         # bind your renderer to pybullet
         # renderer = P3dRenderer(multisamples=4)
-        renderer = PyrRenderer(platform='egl')
-        plugin = RenderingPlugin(self.client_id, renderer)
+        # renderer = PyrRenderer(platform='egl')
+        # plugin = RenderingPlugin(self.client_id, renderer)
 
         if cfg.enable_Debug:
              p.configureDebugVisualizer(1, lightPosition=(5, 0, 5), rgbBackground=(1,1,1))   # set light and background
