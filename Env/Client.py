@@ -24,6 +24,10 @@ from tqdm import tqdm
 from Robotics_API import Pose
 from Visualization.blender_render import PyBulletRecorder
 
+from pybullet_rendering import RenderingPlugin
+from pybullet_rendering.render.panda3d import P3dRenderer   # panda3d-based renderer
+from pybullet_rendering.render.pyrender import PyrRenderer  # pyrender-based renderer
+
 
 class Client:
     """
@@ -49,6 +53,11 @@ class Client:
                 self.client_id = p.connect(p.GUI)
         else:
             self.client_id = p.connect(p.DIRECT)
+
+        # bind your renderer to pybullet
+        # renderer = P3dRenderer(multisamples=4)
+        # renderer = PyrRenderer(platform='egl')
+        # plugin = RenderingPlugin(self.client_id, renderer)
 
         if cfg.enable_Debug:
              p.configureDebugVisualizer(1, lightPosition=(5, 0, 5), rgbBackground=(1,1,1))   # set light and background

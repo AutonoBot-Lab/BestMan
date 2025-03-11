@@ -71,9 +71,11 @@ If you want to install and use centain submodule, please see `install.md` in sub
 - [Lang SAM](../Perception/Object_detection/Lang_SAM/install.md)
 - [AnyGrasp](../Perception/Grasp_Pose_Estimation/AnyGrasp/install.md)
 - [URDFormer](../DigitalTwin/urdformer/install.md)
+- [ACDC](../DigitalTwin/acdc/install.md)
+- [PDDLStream](../Task_Planning/pddlstream/install.md)
 
 During the installation of these submodules, due to different GPU driver versions, the correspondence between torch, cuda and related library versions may need to be adjusted. It is recommended to refer to [here](https://pytorch.org/get-started/previous-versions/)
-  
+
 
 ## Install with Docker (Windows)
 

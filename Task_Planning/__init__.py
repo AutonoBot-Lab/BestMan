@@ -1,4 +1,5 @@
 from .pddlstream import *
+from .LLM_P import LLM_P
 
 __all__=[
     'PDDLStreamPlanner', 
@@ -6,5 +7,6 @@ __all__=[
     'SHARED_DEBUG',
     'StreamInfo',
     'PartialInputs',
-    'print_solution'
+    'print_solution',
+    'LLM_P'
     ]

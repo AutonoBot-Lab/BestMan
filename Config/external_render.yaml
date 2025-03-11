@@ -1,0 +1,13 @@
+Client:
+  width: 256
+  height: 256
+  enable_GUI: False
+  blender: False
+
+Robot:
+  base_init_pose: [0, 0.5, 0.32, 0.0, 0.0, 0.0]                                         # The initial pose of base and arm
+  base_urdf_path: "Asset/Robot/mobile_manipulator/base/ranger_mini_v3/urdf/ranger_mini_v3.urdf"            # base urdf path
+  arm_reset_jointValues: [0.123, -0.223, -1.044, -3.042, -1.159, 0]
+  arm_urdf_path: "Asset/Robot/mobile_manipulator/arm/ufactory/urdf/xarm6.urdf"          # arm urdf
+  arm_num_dofs: 6                                      # 6 DOF
+  arm_place_height: 0.33
