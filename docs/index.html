@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BestMan: A Modular Mobile Manipulator Platform for Embodied AI with Unified Simulation-Hardware APIs</title>
+    <title>BestMan: A Versatile Mobile Manipulation Platform with Seamless Sim2Real Integration and Modular Algorithm Deployment</title>
 
     <script>
         var task_map = {
@@ -23,7 +23,7 @@
             console.log(task_map[category], task, inst)
 
             var video = document.getElementById(category + "-single-task-video");
-            video.src = "assets/videos/demos/" +
+            video.src = "static/asset/videos/demos/" +
                 task_map[category] +
                 "/" +
                 task +
@@ -36,19 +36,19 @@
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/bulma.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/style/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/style/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/style/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/style/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/style/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/style/css/index.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
+    <script defer src="./static/style/js/fontawesome.all.min.js"></script>
+    <script src="./static/style/js/bulma-carousel.min.js"></script>
+    <script src="./static/style/js/bulma-slider.min.js"></script>
+    <script src="./static/style/js/index.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -95,47 +95,58 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title"> BestMan: A Modular Mobile Manipulator Platform for
-                            Embodied AI with Unified Simulation-Hardware APIs</h1>
+                        <h1 class="title is-1 publication-title"> BestMan: A Versatile Mobile Manipulation Platform with Seamless Sim2Real Integration and Modular Algorithm Deployment</h1>
                         <!-- <h4 class="title is-4 conference-authors"><a target="_blank" href="https://2025.ieee-icra.org/"> Submitted to FCS</a></h4> -->
 
                         <!-- 作者 -->
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Kui
-                                    Yang</a><sup>1,&dagger;</sup>,</span>
+                                <a target="_blank" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=cLdbtj8AAAAJ">Kui Yang</a><sup>1&dagger;</sup>,
+                            </span>
+
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Nieqing
-                                    Cao</a><sup>2,&dagger;</sup>,</span>
+                                <a target="_blank" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=8JOf6s8AAAAJ">Xianlei Long</a><sup>1&dagger;</sup>,
+                            </span>
+
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Beichen
-                                    Shao</a><sup>1,&dagger;</sup>,</span>
+                                <a target="_blank" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=0rP_rGUAAAAJ">Yan Ding</a><sup>2</sup>,
+                            </span>
+
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Xingchen
-                                    Wang</a><sup>1,&dagger;</sup>,</span>
+                                <a target="_blank" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=dRBfNTkAAAAJ">Fuqiang Gu</a><sup>1</sup>,
+                            </span>
+                            
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Haoxuan
-                                    Li</a><sup>1,&dagger;</sup>,</span>
+                                <a target="_blank">Jie Ma</a><sup>3</sup>,
+                            </span>
+
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/">Yan Ding</a><sup>3,*</sup>,</span>
+                                <a target="_blank">Huayan Pu</a><sup>3</sup>,
+                            </span>
+                            
                             <span class="author-block">
-                                <a target="_blank" href="https://yding25.com/bestman/">Chao
-                                    Chen</a><sup>1,*</sup>,</span>
+                                <a target="_blank">Jun Luo</a><sup>3</sup>,
+                            </span>
+
+                            <span class="author-block">
+                                <a target="_blank" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=6luJjFQAAAAJ">Chao Chen</a><sup>3*</sup>,
+                            </span>
                         </div>
 
                         <!-- 单位 -->
                         <div class="is-size-5 publication-authors">
-                            <span class="author-block"><sup>1</sup>Chongqing University,</span>
-                            <span class="author-block"><sup>2</sup>Xi'an Jiaotong-Liverpool University,</span>
-                            <span class="author-block"><sup>3</sup>Shanghai Artificial Intelligence Laboratory,</span>
+                            <span class="author-block"><sup>1</sup>College of Computer Science, Chongqing University,</span>
+                            <!-- <span class="author-block"><sup>2</sup>Xi'an Jiaotong-Liverpool University,</span> -->
+                            <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory,</span>
+                            <span class="author-block"><sup>3</sup>State Key Laboratory of Mechanical Transmission for Advanced Equipment, Chongqing University,</span>
                             <span class="author-block"><sup>&dagger;</sup>Equal contribution,</span>
-                            <span class="author-block"><sup>*</sup>Corresponding author: Yan Ding & Chao Chen</span>
+                            <span class="author-block"><sup>*</sup>Corresponding author.</span>
                         </div>
 
                         <!-- Buttons -->
                         <div class="column has-text-centered">
                             <div class="publication-links">
-                                <!-- ArXiv -->
+                                <!-- PDF short version -->
                                 <span class="link-block">
                                     <a target="_blank" href="http://arxiv.org/abs/2410.13407"
                                         class="external-link button is-normal is-rounded is-dark">
@@ -145,29 +156,8 @@
                                         <span>PDF (Short Version)</span>
                                     </a>
                                 </span>
-
-                                <!-- Code Link. -->
-                                <!-- <span class="link-block">
-                                    <a target="_blank" href="https://github.com/AutonoBot-Lab/BestMan_Pybullet"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Code</span>
-                                    </a>
-                                </span> -->
-
-                                <span class="link-block">
-                                    <a target="_blank" href="https://github.com/AutonoBot-Lab/BestMan_Pybullet"
-                                        class="external-link button is-normal is-rounded is-dark"
-                                        style="background: linear-gradient(45deg, #6e5494, #24292e); color: #fff; border: none;">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Code</span>
-                                    </a>
-                                </span>
-
+                                
+                                <!-- PDF long version -->
                                 <span class="link-block">
                                     <a target="_blank" href=""
                                         class="external-link button is-normal is-rounded is-dark">
@@ -175,6 +165,18 @@
                                             <i class="ai ai-arxiv"></i>
                                         </span>
                                         <span>PDF (Long Version, Coming Soon)</span>
+                                    </a>
+                                </span>
+                                
+                                <!-- Code -->
+                                <span class="link-block">
+                                    <a target="_blank" href="https://github.com/AutonoBot-Lab/BestMan"
+                                        class="external-link button is-normal is-rounded is-dark"
+                                        style="background: linear-gradient(45deg, #6e5494, #24292e); color: #fff; border: none;">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
                                     </a>
                                 </span>
 
@@ -185,31 +187,9 @@
                                         <span class="icon">
                                             <i class="fas fa-file-pdf"></i>
                                         </span>
-                                        <span>Works Citing BestMan</span>
+                                        <span>Works Based on BestMan</span>
                                     </a>
                                 </span>
-
-                                <!-- Appendix B -->
-                                <!-- <span class="link-block">
-                                    <a target="_blank" href="https://yding25.com/BestMan/Appendix_B" class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </span>
-                                        <span>Appendix B</span>
-                                    </a>
-                                </span> -->
-
-                                <!-- Appendix C -->
-                                <!-- <span class="link-block">
-                                    <a target="_blank" href="https://yding25.com/BestMan/Appendix_C" class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </span>
-                                        <span>Appendix C</span>
-                                    </a>
-                                </span> -->
-
-                                <!-- End of Buttons -->
                             </div>
                         </div>
                     </div>
@@ -219,20 +199,37 @@
         </div>
     </section>
 
-    <!--     <div id="hidden-content" style="display: none;"> -->
-    <section class="hero is-light is-small">
+    <!-- video -->
+    <!-- <section class="hero is-light is-small">
         <div class="hero-body">
             <div class="container">
                 <div class="item item-sweep_without_exceeding"
                     style="display: flex; justify-content: center; align-items: center;">
                     <video poster="" id="sweep_without_exceeding" autoplay controls muted loop style="width:70%;"
                         playbackRate=2.0>
-                        <source src="./assets/video/BestMan_video_better.mp4" type="video/mp4">
+                        <source src="./static/asset/video/BestMan_video_better.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="item item-sweep_without_exceeding"
+                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop style="width:70%;"
+                        playbackRate=2.0>
+                        <source src="./static/asset/video/BestMan_video.mp4" type="video/mp4">
+                    </video>
+                    <!-- 添加短版本标签 -->
+                    <div style="margin-top: 20px; font-size: 16px; color: #555;">Short Version</div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    
     </div>
 
     <section class="section">
@@ -242,31 +239,15 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p style="font-size: 100%">
-                            Embodied AI emphasizes agents' ability to perceive,
-                            understand, and act in physical environments.
-                            Simulation platforms play a crucial role in advancing this field by enabling the validation
-                            and optimization of algorithms.
-                            However, existing platforms face challenges such as <span style="color: #8B0000;">multilevel
-                                technical integration
-                                complexity</span>, <span style="color: #8B0000;">insufficient modularity</span>, <span
-                                style="color: #8B0000;">interface heterogeneity</span>, and <span
-                                style="color: #8B0000;">adaptation to diverse
-                                hardware</span>.
+                            The emergence of embodied intelligence frameworks has significantly advanced the field of robotics, particularly in mobile manipulation. 
+                            However, the complexity of algorithm development within the real-to-sim-to-real cycle, coupled with heterogeneous and incompatible robot platform interfaces, often impedes seamless solution migration and deployment.
+                            To address this need, we introduce BestMan, a versatile platform designed to facilitate the integration and deployment of mobile manipulation algorithms developed in simulated home environments. 
+                            Specifically, an efficient real-to-sim twin architecture is designed to reduce the virtualization difficulties, which accelerates the digital construction of real-world assets. 
+                            Following that, we propose a fully modular functional architecture that integrates and collaborates perception, planning, and control capabilities with state-of-the-art algorithms to enable the robots to perform diverse tasks. Then, to support seamless migration, we introduce a unified middleware abstraction layer for the simulation and real device interface structure. 
+                            Finally, an exemplar workflow across various representative tasks demonstrates the feasibility and flexibility of algorithm deployment using BestMan. Extensive functional comparisons against competitive frameworks demonstrate BestMan's comprehensiveness and adaptability. 
+                            The open-sourced code is available at <a href="https://github.com/AutonoBot-Lab/BestMan" style="color: blue; text-decoration: underline;">https://github.com/AutonoBot-Lab/BestMan</a>.
                         </p>
-                        <p style="font-size: 100%">
-                            To address these challenges, we develop the <span style="color: #8B0000;">BestMan</span>
-                            platform based on the PyBullet simulator, with the following key contributions:
-                        </p>
-                        <ul style="font-size: 110%; line-height: 1.6;">
-                            <li><strong>Integrated Multilevel Skill Chain:</strong> To address multilevel technical
-                                complexity.</li>
-                            <li><strong>Highly Modular Design:</strong> Enables expandability and algorithm integration.
-                            </li>
-                            <li><strong>Unified Interfaces:</strong> Bridges simulation and real devices to address
-                                interface heterogeneity.</li>
-                            <li><strong>Decoupling Software from Hardware:</strong> Tackles hardware diversity
-                                challenges.</li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
@@ -281,24 +262,23 @@
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvima">Architecture</span></h2>
-                        <img src="./assets/images/BestMan-framework-new.png" alt="Your image description"
+                        <img src="./static/asset/image/BestMan_Framework.png" alt="Your image description"
                             style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
                         <br>
                         <ul
                             style="font-size: 110%; line-height: 1.6; margin-top: 0.5em; padding-left: 1.2em; list-style-type: disc;">
-                            <li>The platform comprises ten major components (highlighted in
+                            <li>The platform comprises eleven top-level modules (highlighted in
                                 <span style="color: blue; font-weight: bold;">blue</span> and
                                 <span style="color: red; font-weight: bold;">red</span>).
-                                Each component contains modules (highlighted in
-                                <span style="color: yellow; font-weight: bold;">yellow</span>),
-                                where various algorithms can be implemented, represented by rounded rectangles,
-                                with the default methods highlighted in
-                                <span style="color: green; font-weight: bold;">green</span>.
+                                ch module contains several submodules (highlighted in
+                                <span style="color: rgb(255, 179, 0); font-weight: bold;">yellow</span>),
+                                where various algorithms or contents can be implemented. (highlighted in
+                                <span style="color: green; font-weight: bold;">green</span>).
                             </li>
                             <li>The ellipsis (...) indicates customizable modules or algorithms that users can extend.
                             </li>
-                            <li>The unified simulation-hardware robotics APIs are constructed based on the control and
-                                sensing components, while other components are independent of these robotics APIs.</li>
+                            <li>The unified simulation-hardware robotics APIs are constructed based on the controller and
+                                sensor modules, while other components are independent of these robotics APIs.</li>
                         </ul>
                     </div>
                 </div>
@@ -314,8 +294,8 @@
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Asset</span></h2>
-                        <img src="./assets/images/demo_picture.svg" alt="Your image description"
+                        <h2 class="title is-3"><span class="dvima">Asset Overview</span></h2>
+                        <img src="./static/asset/image/Asset_Overview.svg" alt="Your image description"
                             style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
                         <br>
 
@@ -325,13 +305,7 @@
                                 simulating a wide range of household scenarios.
                             </li>
                             <li>The platform supports diverse configurations of mobile manipulators, which consist of
-                                modular components such as customizable bases, robotic arms, and interchangeable
-                                end-effectors, offering flexibility for various task executions.
-                            </li>
-                            <li>
-                                We integrate state-of-the-art <span style="color: #8B0000;">digital twin
-                                    algorithms</span>, including URDFormer, enabling users to create highly customized
-                                assets.
+                                modular components such as mobile bases, robotic arms, end effectors and sensors, offering flexibility for various task executions.
                             </li>
                         </ul>
                     </div>
@@ -340,15 +314,16 @@
         </div>
     </section>
 
+    <!-- Simulation demos -->
     <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Demos</span></h2>
+                        <h2 class="title is-3"><span class="dvima">Simulation Demos</span></h2>
                         <video poster="" id="sweep_without_exceeding" autoplay controls muted loop
                             style="width:100%; display: block;">
-                            <source src="./assets/video/demos.mp4" type="video/mp4">
+                            <source src="./static/asset/video/demos.mp4" type="video/mp4">
                         </video>
                         <br>
                         <ul
@@ -368,16 +343,16 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered">
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvima">Contact</span></h2>
-                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 40px; margin-top: 20px;">
+                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 40px; margin-top: 20px;"> -->
                             <!-- Author 1 -->
-                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
-                                <img src="assets/images/headshot3.jpg" alt="Dr. Yan Ding" 
+                            <!-- <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="static/asset/images/headshot3.jpg" alt="Dr. Yan Ding" 
                                     style="border-radius: 50%; width: 100px; height: 100px;">
                                 <div>
                                     <p>
@@ -386,11 +361,11 @@
                                     <p>Researcher at Shanghai AI Lab</p>
                                     <p><span style="color:rgb(62, 61, 61);">yding25@binghamton.edu</span></p>
                                 </div>
-                            </div>
+                            </div> -->
     
                             <!-- Author 2 -->
-                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
-                                <img src="assets/images/headshot4.png" alt="Kui Yang" 
+                            <!-- <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="static/asset/images/headshot4.png" alt="Kui Yang" 
                                     style="border-radius: 50%; width: 100px; height: 100px;">
                                 <div>
                                     <p>
@@ -405,7 +380,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     
     
@@ -507,7 +482,7 @@
                     <div class="rows is-centered ">
                         <div class="row is-full-width">
                             <h2 class="title is-3"><span class="dvima">Experiments</span></h2>
-                            <img src="./assets/images/Fig8.jpeg" alt="Your image description"
+                            <img src="./static/asset/images/Fig8.jpeg" alt="Your image description"
                                 style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
                             <span style="font-size: 100%">
                                 The task completion percentage of COWP (ours) and five baseline methods under 12

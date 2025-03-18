@@ -20,7 +20,7 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat)](https://timothycrosley.github.io/isort/)
 [![Document](https://img.shields.io/badge/Document-%F0%9F%93%98-green)](https://bestman-pybullet.readthedocs.io)
 
-![](docs/_static/other/picture.svg)
+![](docs/static/asset/image/Asset_Overview.svg)
 
 Welcome to the official repository of BestMan!
 
@@ -36,22 +36,22 @@ A mobile manipulator (with a wheel-base and arm) platform built on PyBullet simu
 - [🏠 Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [👨‍💻 Basic Demos](#-basic-demos)
-  - [🌏 Overview](#-overview)
+- [👨‍💻 Examples](#-examples)
   - [🚀 Run](#-run)
-  - [🎇 Blender Render](#-blender-render)
+  - [🎇 Render](#-render)
 - [📝 TODO List](#-todo-list)
 - [🤝 Reference](#-reference)
 - [👏 Acknowledgements](#-acknowledgements)
 - [🚀 Working citing BestMan](#-working-citing-bestman)
 
 ## 🔥 News
+- [2024-02] We released version 0.3.0, long version of the paper submitted to IROS 2025.
 - [2024-11] We released version 0.2.0, optimizing modules such as Install and Robotics API.
 - [2024-10] We release the [paper](http://arxiv.org/abs/2410.13407) of BestMan.
 
 ## 🎯 Framework
 
-![Framework](docs/_static/other/bestman_framework.jpg)
+![Framework](docs/static/asset/image/BestMan_Framework.png)
 
 ## 🏠 Getting Started
 
@@ -67,17 +67,13 @@ A mobile manipulator (with a wheel-base and arm) platform built on PyBullet simu
 
 We provide the installation guide [here](Install/install.md). You can install locally or use docker and verify the installation easily.
 
-## 👨‍💻 Basic Demos
-
-### 🌏 Overview
-
-<video src="https://github.com/user-attachments/assets/499aed7a-6756-4bf5-b25b-84ad1b23d6f9"></video>
+## 👨‍💻 Examples
 
 ### 🚀 Run
 
 Enter `Examples` directory and run the demos. You can also modify the parameters corresponding to the demo.
 
-### 🎇 Blender Render
+### 🎇 Render
 
 `open microwave` demo in **Overview** before blender rendering:
 

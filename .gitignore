@@ -4,6 +4,8 @@
 Asset/Scene/Object/assets
 !Examples/log/.gitkeep
 Examples/log/
+!Examples/image/.gitkeep
+Examples/image/
 Motion_Planning/Manipulation/Grasp/.TimeRecord
 .TimeRecord
 Test
