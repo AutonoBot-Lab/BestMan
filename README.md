@@ -3,15 +3,17 @@
 <h1 align="center"><strong>BestMan: A Versatile Mobile Manipulation Platform with Seamless
 Sim2Real Integration and Modular Algorithm Deployment</strong></h1>
   <p align="center">
-    College of Computer Science, Chongqing University&emsp;&emsp;&emsp;&emsp;Shanghai AI Laboratory&emsp;&emsp;&emsp;&emsp;State Key Laboratory of Mechanical Transmission for Advanced Equipment, Chongqing University
+    College of Computer Science,Chongqing University&emsp;&emsp;&emsp;&emsp;Shanghai AI Laboratory
+  </p>
+  
+  <p align="center">
+    State Key Laboratory of Mechanical Transmission for Advanced Equipment, Chongqing University
   </p>
 </p>
 
 <div id="top" align="center">
 
 ![](docs/_static/BestMan/BestMan_logo_AL.png)
-
-<!-- # BestMan - A Pybullet-based Mobile Manipulator Simulator -->
 
 [![arxiv](https://img.shields.io/badge/arxiv-2410.13407-orange)](http://arxiv.org/abs/2410.13407)
 [![paper](https://img.shields.io/badge/Paper-%F0%9F%93%96-yellow)](https://arxiv.org/pdf/2410.13407)
