@@ -1,8 +1,9 @@
 <br>
 <p align="center">
-<h1 align="center"><strong>BestMan: A Modular Mobile Manipulator Platform for Embodied AI with Unified Simulation-Hardware APIs</strong></h1>
+<h1 align="center"><strong>BestMan: A Versatile Mobile Manipulation Platform with Seamless
+Sim2Real Integration and Modular Algorithm Deployment</strong></h1>
   <p align="center">
-    Chongqing University&emsp;&emsp;&emsp;&emsp;Shanghai AI Laboratory&emsp;&emsp;&emsp;&emsp;Xi'an Jiaotong-Liverpool University
+    College of Computer Science, Chongqing University&emsp;&emsp;&emsp;&emsp;Shanghai AI Laboratory&emsp;&emsp;&emsp;&emsp;State Key Laboratory of Mechanical Transmission for Advanced Equipment, Chongqing University
   </p>
 </p>
 
