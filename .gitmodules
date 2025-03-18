@@ -33,3 +33,6 @@
 [submodule "LLM_P"]
 	path = Task_Planning/LLM_P
 	url = https://github.com/starry521/llm-pddl.git
+[submodule "Perception/Affordance_Recognition/LOCATE"]
+	path = Perception/Affordance_Recognition/LOCATE
+	url = https://github.com/starry521/LOCATE.git
