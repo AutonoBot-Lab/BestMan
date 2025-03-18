@@ -65,7 +65,7 @@ def main():
     lang_sam.add("box_filename", "./output/sim_test/box.png")
     lang_sam.add("mask_filename", "./output/sim_test/mask.png")
     lang_sam.call(
-        "lang-segment-anything", "Perception/Object_detection/Lang_SAM/Lang_SAM.py"
+        "lang-segment-anything", "Perception/Semantic_Segmentation/Lang_SAM/Lang_SAM.py"
     )
     seg_mask = lang_sam.get("seg_mask", np.ndarray)
     bbox = lang_sam.get("bbox", np.ndarray)
