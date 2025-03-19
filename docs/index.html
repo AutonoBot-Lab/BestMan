@@ -343,29 +343,17 @@
         </div>
     </section>
 
-    <!-- <section class="section">
+    <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Contact</span></h2>
-                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 40px; margin-top: 20px;"> -->
+                        <h2 class="title is-3"><span class="dvima">Author</span></h2>
+                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 80px; margin-top: 20px;">
+                            
                             <!-- Author 1 -->
-                            <!-- <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
-                                <img src="static/asset/images/headshot3.jpg" alt="Dr. Yan Ding" 
-                                    style="border-radius: 50%; width: 100px; height: 100px;">
-                                <div>
-                                    <p>
-                                        <a href="https://yding25.com/" style="font-weight: bold;">Dr. Yan Ding</a>
-                                    </p>
-                                    <p>Researcher at Shanghai AI Lab</p>
-                                    <p><span style="color:rgb(62, 61, 61);">yding25@binghamton.edu</span></p>
-                                </div>
-                            </div> -->
-    
-                            <!-- Author 2 -->
-                            <!-- <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
-                                <img src="static/asset/images/headshot4.png" alt="Kui Yang" 
+                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="./static/asset/image/KuiYang.png" alt="Kui Yang" 
                                     style="border-radius: 50%; width: 100px; height: 100px;">
                                 <div>
                                     <p>
@@ -375,17 +363,54 @@
                                     <p><span style="color:rgb(62, 61, 61);">202414021045T@stu.cqu.edu.cn</span></p>
                                 </div>
                             </div>
+
+                            <!-- Author 2 -->
+                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="./static/asset/image/YanDing.jpg" alt="Yan Ding" 
+                                    style="border-radius: 50%; width: 100px; height: 100px;">
+                                <div>
+                                    <p>
+                                        <a href="https://yding25.com/" style="font-weight: bold;">Dr. Yan Ding</a>
+                                    </p>
+                                    <p>Researcher at Shanghai AI Lab</p>
+                                    <p><span style="color:rgb(62, 61, 61);">yding25@binghamton.edu</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 80px; margin-top: 40px;">
+                            <!-- Author 3 -->
+                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="./static/asset/image/XianleiLong.jpg" alt="Xianlei Long" 
+                                    style="border-radius: 50%; width: 100px; height: 100px;">
+                                <div>
+                                    <p>
+                                        <a href="https://yding25.com/" style="font-weight: bold;">Chao Chen</a>
+                                    </p>
+                                    <p>Researcher at Chongqing University</p>
+                                    <p><span style="color:rgb(62, 61, 61);">xianlei.long@cqu.edu.cn</span></p>
+                                </div>
+                            </div>
+
+                            <!-- Author 4 -->
+                            <div style="display: flex; align-items: center; gap: 15px; flex: 1; max-width: 45%;">
+                                <img src="./static/asset/image/ChaoChen.jpg" alt="Dr. Yan Ding" 
+                                    style="border-radius: 50%; width: 100px; height: 100px;">
+                                <div>
+                                    <p>
+                                        <a href="https://yding25.com/" style="font-weight: bold;">Dr. Yan Ding</a>
+                                    </p>
+                                    <p>Full Professor, Chongqing University</p>
+                                    <p><span style="color:rgb(62, 61, 61);">cschaochen@cqu.edu.cn</span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     
-    
-    
-    
-
     <!--BibTeX-->
     <section class="section" id="BibTeX">
         <div class="container is-max-widescreen content">
@@ -400,379 +425,6 @@
             </code></pre>
         </div>
     </section>
-
-    <!--END OF BestMan WEBSITE-->
-
-
-    <div id="hidden-content">
-
-        <!--Prompt Design-->
-        <section class="section">
-            <div class="container is-max-widescreen">
-                <div class="rows">
-                    <div class="rows is-centered ">
-                        <div class="row is-full-width">
-                            <h2 class="title is-3"><span class="dvima">Prompt Design for Plan Monitor and Knowledge
-                                    Acquirer</span></h2>
-                            <span style="font-size: 100%">
-                                The realization of our plan monitor relies on repeatedly querying GPT-3 for each action
-                                using the following prompt.
-                            </span>
-                            <br>
-                            <span style="font-size: 100%">
-                                <span style="font-weight: bold">Prompt 1</span>: Is it suitable for a robot to
-                                [Perform-Action], if [Situation]?
-                            </span>
-                            <br>
-                            <br>
-                            <span style="font-size: 100%">
-                                The following template is for querying an LLM for acquiring common sense about action
-                                effects.
-                            </span>
-                            <br>
-                            <span style="font-size: 100%">
-                                <span style="font-weight: bold">Prompt 2</span>: Is it suitable for a robot to
-                                [Perform-Action-with-Object]?
-                            </span>
-                            <br>
-                            <span style="font-size: 100%">
-                                <span style="font-weight: bold">Prompt 3</span>: There are some objects, such as
-                                [Object-1], [Object-2], ..., and [Object-N]. Which is the most suitable for
-                                [Current-Task], if [Situation]?
-                            </span>
-                            <br>
-                            <span style="font-size: 100%">
-                                <sup>&#8270;</sup> Please note that these prompts are zero-shot.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Situation Dataset-->
-        <section class="section">
-            <div class="container is-max-widescreen">
-                <div class="rows">
-                    <div class="rows is-centered ">
-                        <div class="row is-full-width">
-                            <h2 class="title is-3"><span class="dvima">Situation Dataset</span></h2>
-                            <span style="font-size: 100%">
-                                Users can download both the MTurk questionnaire and the situation dataset at the top of
-                                the website. The dataset is provided as a CSV file comprising 12 separate sheets, each
-                                representing situations for a distinct task. The name of the task corresponds to the
-                                sheet name. Each sheet consists of five columns.
-                                <br>
-                                <br>
-                                The situations' descriptions provided by the MTurkers are in Column A. Column B details
-                                the corresponding steps where the described situation occurs. Column C is the index of
-                                distinguishable situations, while Column D provides descriptions of these situations.
-                                Finally, Column E indicates the number of distinguishable situations.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Experiments-->
-        <section class="section">
-            <div class="container is-max-widescreen">
-                <div class="rows">
-                    <div class="rows is-centered ">
-                        <div class="row is-full-width">
-                            <h2 class="title is-3"><span class="dvima">Experiments</span></h2>
-                            <img src="./static/asset/images/Fig8.jpeg" alt="Your image description"
-                                style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
-                            <span style="font-size: 100%">
-                                The task completion percentage of COWP (ours) and five baseline methods under 12
-                                different tasks. The x-axis represents the task name, and the y-axis represents the task
-                                completion percentage. The task completion percentage for each value is an average of
-                                150 trials. The tasks are sorted based on the performance of COWP, where the very left
-                                corresponds to its best performance.
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <!-- Inserted Tabs Start -->
-                    <br>
-                    <span style="font-size: 100%">
-                        Below shows the prompts and hyperparameters of baselines in the evaluation, where [] is a
-                        placeholder.
-                    </span>
-                    <br>
-                    <div class="tabs">
-                        <ul>
-                            <li class="is-active"><a href="#prompt_progprompt">Prompt for ProgPrompt</a></li>
-                            <li><a href="#prompt_innermonologue">Prompt for Inner Monologue</a></li>
-                            <li><a href="#hyperparameters_LMZSP">Hyperparameters used in LMZSP</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="prompt_progprompt">
-                            <pre><code>
-from actions import walk &lt;obj&gt;, run &lt;obj&gt;, grab &lt;obj&gt;, switchon &lt;obj&gt;, switchoff &lt;obj&gt;, open &lt;obj&gt;, close &lt;obj&gt;, find &lt;obj&gt;, putin &lt;obj&gt; &lt;obj&gt;, fill &lt;obj&gt; &lt;obj&gt;, clean &lt;obj&gt;, wash &lt;obj&gt;
-objects = ['wine', 'bucket', 'dish bowl', 'chips', 'sponge', 'snack', 'kitchencabinet', 'wastecontainer', 'cleaning bottle', 'drinking glass', 'kitchen cabinet', 'dish', 'coffee table', 'blender', 'dining table', 'mug', 'coffee maker', 'dehumidifier', 'air fryer', 'water filter', 'tea', 'dining', 'coffee filter', 'colander', 'orange juice', 'condiment bottle', 'watermelon juice', 'mat', 'closet', 'beer', garbagecan', 'cutlery knife', 'ice cream', 'sauce', 'table_1', 'oven tray', 'refrigerator', 'table cloth', 'steak', 'cupboard', 'wineglass', 'kitchen', 'cutting board', 'noodles', 'kitchen table', 'wooden chopstick', 'frying pan', 'cloth napkin', 'piano bench', 'toaster']
-def put_the_wine_glass_in_the_kitchen_cabinet():
-      # 0: walk to kitchen
-      walk('kitchen')
-      # 1: find wine glass
-      find('wineglass')
-      # 2: grab wine glass
-      assert('close' to 'wineglass')
-      else: find('wineglass')
-      grab('wineglass')
-      # 3: find kitchen cabinet
-      find('kitchencabinet')
-      # 4: open kitchen cabinet
-      assert('close' to 'kitchencabinet' )
-      else: find('kitchencabinet')
-      assert('kitchencabinet' is 'closed' )
-      else: close('kitchencabinet')
-      open('kitchencabinet')
-      # 5: put wine glass in kitchen cabinet
-      assert('wineglass' in 'hands' )
-      else: find('wineglass')
-      else: grab('wineglass')
-      assert('close' to 'kitchencabinet' )
-      else: find('kitchencabinet')
-      assert('kitchencabinet' is 'opened' )
-      else: open('kitchencabinet')
-      putin('wineglass', 'kitchencabinet')
-      # 6: close kitchen cabinet
-      assert('close' to 'kitchencabinet' )
-      else: find('kitchencabinet')
-      assert('kitchencabinet' is 'opened' )
-      else: open('kitchencabinet')
-      close('kitchencabinet')
-      # 7: Done
-
-from actions import walk &lt;obj&gt;, run &lt;obj&gt;, grab &lt;obj&gt;, switchon &lt;obj&gt;, switchoff &lt;obj&gt;, open &lt;obj&gt;, close &lt;obj&gt;, find &lt;obj&gt;, putin &lt;obj&gt; &lt;obj&gt;, fill &lt;obj&gt; &lt;obj&gt;, clean &lt;obj&gt;, wash &lt;obj&gt;
-objects = ['wine', 'bucket', 'dish bowl', 'chips', 'sponge', 'snack', 'kitchencabinet', 'cleaning bottle', 'drinking glass', 'kitchen cabinet', 'dish', 'coffee table', 'blender', 'dining table', 'mug', 'coffee maker', 'dehumidifier', 'air fryer', 'water filter', 'tea', 'dining', 'coffee filter', 'colander', 'orange juice', 'condiment bottle', 'watermelon juice', 'mat', 'closet', 'beer', 'garbagecan_1', 'cutlery knife', 'ice cream', 'sauce', 'table_1', 'oven tray', 'refrigerator', 'table cloth', 'steak', 'cupboard', 'wineglass', 'kitchen', 'cutting board', 'noodles', 'kitchen table', 'wooden chopstick', 'frying pan', 'cloth napkin', 'garbagecan_2', 'piano bench', 'toaster']
-def throw_away_the_lime, where garbagecan_1 is broken():
-      # 0: find lime
-      find('lime')
-      # 1: grab lime
-      assert('close' to 'lime')
-      else: find('lime')
-      grab('lime')
-      # 2: find garbage can
-      find('garbagecan_1')
-      assert('broken' to 'garbagecan_1')
-      else: find('garbagecan_2')
-      # 3: open garbage can
-      assert('close' to 'garbagecan_2' )
-      else: find('garbagecan_2')
-      assert('garbagecan_2' is 'closed' )
-      else: close('garbagecan_2')
-      open('garbagecan_2')
-      # 4: put lime in garbage can
-      assert('lime' in 'hands' )
-      else: find('lime')
-      else: grab('lime')
-      assert('close' to 'garbagecan_2' )
-      else: find('garbagecan_2')
-      assert('garbagecan_2' is 'opened' )
-      else: open('garbagecan_2')
-      putin('lime', 'garbagecan_2')
-      # 5: close garbage can
-      assert('close' to 'garbagecan_2' )
-      else: find('garbagecan_2')
-      assert('garbagecan_2' is 'opened' )
-      else: open('garbagecan_2')
-      close('garbagecan_2)
-      # 6: Done
-
-
-from actions import walk &lt;obj&gt;, run &lt;obj&gt;, grab &lt;obj&gt;, switchon &lt;obj&gt;, switchoff &lt;obj&gt;, open &lt;obj&gt;, close &lt;obj&gt;, find &lt;obj&gt;, putin &lt;obj&gt; &lt;obj&gt;, fill &lt;obj&gt; &lt;obj&gt;, clean &lt;obj&gt;, wash &lt;obj&gt;
-objects = ['wine', 'bucket', 'dish bowl', 'chips', 'sponge', 'snack', 'kitchencabinet', 'wastecontainer', 'cleaning bottle', 'drinking glass', 'kitchen cabinet', 'dish', 'coffee table', 'blender', 'dining table', 'mug', 'coffee maker', 'dehumidifier', 'air fryer', 'water filter', 'tea', 'dining', 'coffee filter', 'colander', 'orange juice', 'condiment bottle', 'watermelon juice', 'mat', 'closet', 'beer', garbagecan', 'cutlery knife', 'ice cream', 'sauce', 'table_1', 'oven tray', 'refrigerator', 'washingsponge', 'table cloth', 'steak', 'cupboard', 'wineglass', 'kitchen', 'cutting board', 'noodles', 'kitchen table', 'wooden chopstick', 'frying pan', 'cloth napkin', 'piano bench', 'toaster', 'dishwashingliquid', 'washingcloth']
-def wash_mug, where washingsponge is missing():
-      # 0: walk to kitchen
-      walk('kitchen')
-      # 1: find sink
-      find('sink')
-      # 2: turn on faucet
-      find('faucet')
-      assert('close' to 'faucet' )
-      else: find('faucet')
-      assert('faucet' is 'switchoff' )
-      else: switchoff('faucet')
-      switchon('faucet')
-      # 3: put mug under water
-      find('mug')
-      assert('close' to 'mug')
-      else: find('mug')
-      grab('mug')
-      find('sink')
-      assert('mug' in 'hands' )
-      else: find('mug')
-      else: grab('mug')
-      assert('close' to 'sink' )
-      else: find('sink')
-      putin('mug', 'sink')
-      # 4: grab dishwashing liquid
-      find('dishwashingliquid')
-      assert('close' to 'dishwashingliquid')
-      else: find('dishwashingliquid')
-      grab('dishwashingliquid')
-      # 5: put dishwashing liquid on mug
-      find('sink')
-      assert('dishwashingliquid' in 'hands' )
-      else: find('dishwashingliquid')
-      else: grab('dishwashingliquid')
-      assert('close' to 'sink' )
-      else: find('sink')
-      putin('dishwashingliquid', 'sink')
-      # 6: grab washingsponge
-      find('washingsponge')
-      assert('missing' to 'washingsponge')
-      else: find('washingcloth')
-      grab('washingcloth')
-      # 7: start scrubbing mug
-      find('sink')
-      assert('washingcloth' in 'hands' )
-      else: find('washingcloth')
-      else: grab('washingcloth')
-      assert('close' to 'sink' )
-      else: find('sink')
-      putin('washingcloth', 'sink')
-      # 8: rinse mug off with water
-      # 9: dry mug with towel
-      # 10: Done
-
-from actions import walk &lt;obj&gt;, run &lt;obj&gt;, grab &lt;obj&gt;, switchon &lt;obj&gt;, switchoff &lt;obj&gt;, open &lt;obj&gt;, close &lt;obj&gt;, find &lt;obj&gt;, putin&lt;obj&gt; &lt;obj&gt;, fill &lt;obj&gt; &lt;obj&gt;, clean &lt;obj&gt;, wash &lt;obj&gt;
-objects = [objects in the environment]
-def [task description], where [situation] ():
-</code></pre>
-                        </div>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane" id="prompt_innermonologue">
-                            <pre><code>
-Here are actions that can be executed by the robot: walk, run, grab, switch on, switch off, open, close, find, put, fill, clean, wash
-
-Human: put the wine glass in the kitchen cabinet
-Scene: ['orchid', 'sink', 'peach', 'mouse', 'oven tray', 'hanger', 'clothes pants', 'cupcake', 'power socket', 'bell pepper', 'slippers', 'toaster', 'closet', 'floor', 'pillow', 'door jamb', 'light switch', 'faucet', 'pie', 'bookshelf', 'cutlery fork', 'condiment shaker', 'bathroom counter', 'keyboard', 'cutlery knife', 'bananas', 'washing machine', 'box', 'ceiling', 'creamy buns', 'bed', 'crackers', 'bathroom', 'stove', 'paper', 'condiment bottle', 'lime', 'stove fan', 'washing sponge', 'deodorant', 'radio', 'kitchen', 'toilet', 'fridge', 'bedroom', 'dishwashing liquid', 'kitchen cabinet', 'remote control', 'folder', 'bar soap', 'bench', 'coffee pot', 'frying pan', 'curtains', 'desk', 'door', 'toothpaste', 'computer', 'painkillers', 'towel rack', 'cereal', 'wall', 'wall picture frame', 'bathtub', 'dish bowl', 'living room', 'cabinet', 'ceiling lamp', 'clothes pile', 'cpu screen', 'plum', 'photo frame', 'stall', 'table lamp', 'rug', 'toothbrush', 'coffee table', 'plate', 'water glass', 'chocolate syrup', 'window', 'bathroom cabinet', 'face cream', 'whipped cream', 'closet drawer', 'kitchen counter', 'tv', 'microwave', 'mug', 'perfume', 'salmon', 'candy bar', 'kitchen table', 'coffee maker', 'wall lamp', 'bread slice', 'towel', 'mouse mat', 'apple', 'cellphone', 'wall shelf', 'book', 'sofa', 'chips', 'wall phone', 'kitchen counter drawer', 'clothes shirt', 'candle', 'hair product', 'wine glass', 'garbage can', 'nightstand', 'clock', 'tv stand', 'chair']
-Robot:
-  0: walk to kitchen
-  1: find wine glass
-  2: grab wine glass
-  3: find kitchen cabinet
-  4: open kitchen cabinet
-  5: put wine glass in kitchen cabinet
-  6: close kitchen cabinet
-  7: Done
-
-Human: throw away the lime
-Scene: ['garbage can_1 is broken', 'orchid', 'sink', 'peach', 'mouse', 'garbage can_1', 'oven tray', 'hanger', 'clothes pants', 'cupcake', 'power socket', 'bell pepper', 'slippers', 'toaster', 'closet', 'floor', 'pillow', 'door jamb', 'light switch', 'faucet', 'pie', 'bookshelf', 'cutlery fork', 'condiment shaker', 'bathroom counter', 'keyboard', 'cutlery knife', 'bananas', 'washing machine', 'box', 'ceiling', 'creamy buns', 'bed', 'crackers', 'bathroom', 'stove', 'paper', 'condiment bottle', 'lime', 'stove fan', 'washing sponge', 'deodorant', 'radio', 'kitchen', 'toilet', 'fridge', 'bedroom', 'dishwashing liquid', 'kitchen cabinet', 'remote control', 'folder', 'bar soap', 'bench', 'coffee pot', 'frying pan', 'curtains', 'desk', 'door', 'toothpaste', 'computer', 'painkillers', 'towel rack', 'cereal', 'wall', 'wall picture frame', 'bathtub', 'dish bowl', 'living room', 'cabinet', 'ceiling lamp', 'clothes pile', 'cpu screen', 'plum', 'photo frame', 'stall', 'table lamp', 'rug', 'toothbrush', 'coffee table', 'plate', 'water glass', 'chocolate syrup', 'window', 'bathroom cabinet', 'face cream', 'whipped cream', 'closet drawer', 'kitchen counter', 'tv', 'microwave', 'mug', 'perfume', 'salmon', 'candy bar', 'kitchen table', 'coffee maker', 'wall lamp', 'bread slice', 'towel', 'mouse mat', 'apple', 'cellphone', 'wall shelf', 'book', 'sofa', 'chips', 'wall phone', 'kitchen counter drawer', 'clothes shirt', 'candle', 'hair product', 'wine glass', 'garbage can_2', 'nightstand', 'clock', 'tv stand', 'chair']
-Robot:
-  0: find lime
-  1: grab lime
-  2: find garbage can_2
-  3: open garbage can_2
-  4: put lime in garbage can_2
-  5: close garbage can_2
-  6: Done
-
-Human: wash mug
-Scene: ['washing sponge is missing', 'orchid', 'sink', 'peach', 'mouse', 'oven tray', 'hanger', 'clothes pants', 'cupcake', 'power socket', 'bell pepper', 'slippers', 'toaster', 'closet', 'floor', 'pillow', 'door jamb', 'light switch', 'faucet', 'pie', 'bookshelf', 'cutlery fork', 'condiment shaker', 'bathroom counter', 'keyboard', 'cutlery knife', 'bananas', 'washing machine', 'box', 'ceiling', 'creamy buns', 'bed', 'crackers', 'bathroom', 'stove', 'paper', 'condiment bottle', 'lime', 'stove fan', 'washing sponge', 'deodorant', 'radio', 'kitchen', 'toilet', 'fridge', 'bedroom', 'dishwashing liquid', 'kitchen cabinet', 'remote control', 'folder', 'bar soap', 'bench', 'coffee pot', 'frying pan', 'curtains', 'desk', 'door', 'toothpaste', 'computer', 'painkillers', 'towel rack', 'cereal', 'wall', 'wall picture frame', 'bathtub', 'dish bowl', 'living room', 'cabinet', 'ceiling lamp', 'clothes pile', 'cpu screen', 'plum', 'photo frame', 'stall', 'table lamp', 'rug', 'toothbrush', 'coffee table', 'plate', 'water glass', 'chocolate syrup', 'window', 'bathroom cabinet', 'face cream', 'whipped cream', 'closet drawer', 'kitchen counter', 'tv', 'microwave', 'mug', 'perfume', 'salmon', 'candy bar', 'kitchen table', 'coffee maker', 'wall lamp', 'bread slice', 'towel', 'mouse mat', 'apple', 'cellphone', 'wall shelf', 'book', 'sofa', 'chips', 'wall phone', 'kitchen counter drawer', 'clothes shirt', 'candle', 'hair product', 'wine glass', 'garbage can', 'nightstand', 'clock', 'tv stand', 'chair']
-Robot:
-  0: walk to kitchen
-  1: find sink
-  2: switch on faucet
-  3: put mug in sink
-  4: grab dishwashing liquid
-  5: put dishwashing liquid in sink
-  6: grab washing cloth
-  7: put washing cloth in sink
-  8: wash mug
-  8: Done
-
-
-Scene: [situation, ojects in the environment]
-Human: [task description]
-Robot:
-</code></pre>
-                        </div>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane" id="hyperparameters_LMZSP">
-                            <pre><code>
-planning_lm_id = 'text-davinci-003'
-translation_lm_id = 'stsb-roberta-large'
-MAX_STEPS = 12  # maximum number of steps to be generated
-CUTOFF_THRESHOLD = 0.5  # early stopping threshold based on matching score and likelihood score
-P = 0.5  # hyperparameter for early stopping heuristic to detect whether Planning LM believes the plan is finished
-BETA = 0.3  # weighting coefficient used to rank generated samples
-sampling_params =
-              {   "max_tokens": 256,
-                  "temperature": 0.9,
-                  "top_p": 0.9,
-                  "n": 10,
-                  "logprobs": 1,
-                  "presence_penalty": 0.5,
-                  "frequency_penalty": 0.3,
-                  "stop": '\n'
-              }
-                        </code></pre>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Conclusion-->
-        <section class="section">
-            <div class="container is-max-widescreen">
-                <div class="rows">
-                    <div class="rows is-centered ">
-                        <div class="row is-full-width">
-                            <h2 class="title is-3"><span class="dvima">Conclusion</span></h2>
-
-                            <p style="font-size: 100%">
-                                In this paper, we develop a Large Language Model-based open-world task planning system
-                                for robots, called COWP, towards robust task planning and situation handling in open
-                                worlds.
-                                The novelty of COWP points to the integration of a classical, knowledge-based task
-                                planning system, and a pretrained language model for commonsense knowledge acquisition.
-                                The marriage of the two enables COWP to ground domain-independent commonsense knowledge
-                                to specific task planning problems.
-                                To evaluate COWP systematically, we collected a situation dataset that includes 1085
-                                situations in a dining domain.
-                                Experimental results suggest that COWP performed better than existing task planners
-                                developed for closed-world and open-world scenarios.
-                                We also provided a demonstration of COWP using a mobile manipulator working on delivery
-                                tasks, which provides a reference to COWP practitioners for real-world applications.
-                            </p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section" id="BibTeX">
-            <div class="container is-max-widescreen content">
-                <h2 class="title">BibTeX</h2>
-                <pre><code>
-    @article{ding2023integrating,
-      title={Integrating Action Knowledge and LLMs for Task Planning and Situation Handling in Open Worlds},
-      author={Ding, Yan and Zhang, Xiaohan and Amiri, Saeid and Cao, Nieqing and Yang, Hao and Kaminski, Andy and Esselink, Chad and Zhang, Shiqi},
-      journal={Autonomous Robots},
-      year={2023}
-    }
-            </code></pre>
-            </div>
-        </section>
-
-    </div>
 
     <footer class="footer">
         <div class="container">
