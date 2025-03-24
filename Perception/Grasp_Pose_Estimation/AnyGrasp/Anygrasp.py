@@ -245,21 +245,19 @@ if __name__ == "__main__":
     # set work dir to AnyGrasp
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    input = Submodule()
-    pkl_file = os.path.abspath("./data.pkl")
-    input.deserialize(pkl_file)
-
-    anygrasp_cfg = input.get("anygrasp_cfg", CN)
-    camera_cfg = input.get("camera_cfg", CN)
-    points = input.get("points", np.ndarray).astype(np.float32)
-    image = input.get("image", Image.Image)
-    colors = input.get("colors", np.ndarray).astype(np.float32)
-    seg_mask = input.get("seg_mask", np.ndarray)
-    bbox = input.get("bbox", np.ndarray)
+    input = deserialize("./data.pkl")
+    anygrasp_cfg = input["anygrasp_cfg"]
+    camera_cfg = input["camera_cfg"]
+    points = input["points"]
+    image = input["image"]
+    colors = input["colors"]
+    seg_mask = input["seg_mask"]
+    bbox = input["bbox"]
 
     anygrasp = Anygrasp(anygrasp_cfg, camera_cfg)
     best_pose = anygrasp.Grasp_Pose_Estimation(points, image, colors, seg_mask, bbox)
 
-    input.clear()
-    input.add("best_pose", best_pose)
-    input.serialize(pkl_file)
+    output = {
+        "best_pose": best_pose,
+    }
+    serialize(output, "./data.pkl")
