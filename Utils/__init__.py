@@ -1,3 +1,3 @@
-from .subprogress import Submodule
+from .subprocess import Submodule, serialize, deserialize
 
-__all__ = ["Submodule"]
+__all__ = ["Submodule", "serialize", "deserialize"]

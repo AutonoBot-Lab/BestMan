@@ -4,6 +4,7 @@ from transformers import OwlViTProcessor, OwlViTForObjectDetection
 import os
 import requests
 import matplotlib.pyplot as plt
+from Utils import serialize, deserialize
 
 class OWL_ViT:
     def __init__(self, model_name="google/owlvit-base-patch32", proxy_url=None):
@@ -80,24 +81,21 @@ class OWL_ViT:
         plt.axis("off")  # Turn off axes
         plt.show()
 
-
 if __name__ == "__main__":
-    
-    proxy_url = '127.0.0.1:7897'
-    url = "http://images.cocodataset.org/val2017/000000039769.jpg"
-    response = requests.get(url, stream=True)
-    image = Image.open(response.raw).convert("RGB")
-    text_labels = [["a photo of a cat", "a photo of a dog"]]
 
-    # Initialize the OWL_ViT class
+    # set work dir to OWL_ViT
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+    input = deserialize("./data.pkl")
+    proxy_url = input["proxy_url"]
+    image = input["image"]
+    text_labels = input["text_labels"]
+    
     owl_vit = OWL_ViT(proxy_url=proxy_url)
-
-    # Perform prediction
     results = owl_vit.predict(image, text_labels)
-
-    # Print detection results
-    for res in results:
-        print(f"Detected {res['label']} with confidence {res['score']} at location {res['box']}")
+    # owl_vit.visualize(image, results)
     
-    # Visualize results
-    owl_vit.visualize(image, results)
+    output = {
+        "results": results
+    }
+    serialize(output, "./data.pkl")
