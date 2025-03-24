@@ -22,5 +22,5 @@ pip install -U git+https://github.com/starry521/lang-segment-anything
 - Other package
 
 ```
-pip install yacs
+pip install -r requirements.txt
 ```

@@ -178,17 +178,13 @@ if __name__ == "__main__":
     # set work dir to Lang-SAM
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    input = Submodule()
-    pkl_file = os.path.abspath("./data.pkl")
-    input.deserialize(pkl_file)
-    image = input.get("input_img", Image.Image)
-    query = input.get("query")
-    box_filename = input.get("box_filename")
-    mask_filename = input.get("mask_filename")
+    input = deserialize("./data.pkl")
+    image = input["input_img"]
+    query = input["query"]
+    box_filename = input["box_filename"]
+    mask_filename = input["mask_filename"]
 
     lang_sam = Lang_SAM()
-
-    # Object Segmentaion Mask
     seg_mask, bbox = lang_sam.detect_obj(
         image,
         query,
@@ -197,13 +193,9 @@ if __name__ == "__main__":
         box_filename=box_filename,
         mask_filename=mask_filename,
     )
-
-    input.clear()
-    input.add("seg_mask", seg_mask)
-    input.add("bbox", bbox)
-    input.serialize(pkl_file)
-
-    # For test
-    # image = Image.open(f"./test_image/test_rgb.jpg")
-    # box_filename = f"./output/object_box.jpg"
-    # mask_filename = f"./output/object_mask.jpg
+    
+    output = {
+        "seg_mask": seg_mask,
+        "bbox": bbox,
+    }
+    serialize(output, "./data.pkl")
