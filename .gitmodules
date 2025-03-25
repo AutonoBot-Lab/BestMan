@@ -37,3 +37,7 @@
 [submodule "LOCATE"]
 	path = Perception/Affordance_Recognition/LOCATE
 	url = https://github.com/starry521/LOCATE.git
+
+[submodule "Contact_GraspNet"]
+	path = Perception/Grasp_Pose_Estimation/Contact_GraspNet
+	url = https://github.com/NVlabs/contact_graspnet.git
