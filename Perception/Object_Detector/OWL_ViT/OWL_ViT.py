@@ -2,8 +2,8 @@ import os
 import torch
 from transformers import OwlViTProcessor, OwlViTForObjectDetection
 from PIL import ImageDraw, ImageFont
+from matplotlib import pyplot as plt
 from Utils import serialize, deserialize
-from utils import *
 
 class OWL_ViT:
     def __init__(self, model_name="google/owlvit-base-patch32", proxy_url=None):
