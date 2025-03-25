@@ -18,4 +18,14 @@ input_data = {
     "text_queries": text_queries
 }
 output = owl_vit.call(input_data, "owl_vit", "Perception/Object_Detector/OWL_ViT/OWL_ViT.py")
-print(output["results"])
+results = output["results"]
+
+# print results
+for i in range(len(results)):
+    print(f"\nimage {i}")
+    text = text_queries[i]
+    boxes, scores, labels = results[i]["boxes"], results[i]["scores"], results[i]["labels"]
+
+    for box, score, label in zip(boxes, scores, labels):
+        box = [round(i, 2) for i in box.tolist()]
+        print(f"Detected {text[label]} with confidence {round(score.item(), 3)} at location {box}")
