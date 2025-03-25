@@ -23,7 +23,7 @@ dependencies:
       - lisdf==0.1.1
       - transforms3d==0.3.1
       - PyQt5==5.15.11
-      - opencv-python==4.1.2.30
+      - opencv-python==4.11.0.86
       - pybullet==3.2.6
       - open3d==0.18.0
       - openpyxl==3.1.5
