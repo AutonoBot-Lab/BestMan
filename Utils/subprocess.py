@@ -35,7 +35,6 @@ class Submodule:
         )
         pkl_file = script_abspath.parent / "data.pkl"
         serialize(input_data, pkl_file)
-        
         python = local[get_env_path(env_name)]
         cmd = python[script_abspath]
         output = cmd()
