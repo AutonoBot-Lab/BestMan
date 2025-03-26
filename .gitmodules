@@ -40,4 +40,4 @@
 
 [submodule "Contact_GraspNet"]
 	path = Perception/Grasp_Pose_Estimation/Contact_GraspNet
-	url = https://github.com/NVlabs/contact_graspnet.git
+	url = https://github.com/starry521/contact_graspnet.git
