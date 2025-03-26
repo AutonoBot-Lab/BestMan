@@ -100,34 +100,6 @@ class Grounded_SAM:
             plot_detections(image_array, detections, save_name)
     
 
-# if __name__=="__main__":
-    
-#     # Init
-#     proxy_url = "127.0.0.1:7897"
-#     detect_threshold = 0.3
-#     detector_id = "IDEA-Research/grounding-dino-tiny"
-#     segmenter_id = "facebook/sam-vit-base"
-    
-#     grounded_sam = Grounded_SAM(
-#         proxy_url=proxy_url,
-#         detect_threshold=detect_threshold, 
-#         detector_id=detector_id, 
-#         segmenter_id=segmenter_id,
-#         polygon_refinement=True
-#     )
-    
-#     # Predict
-#     image = Image.open("./test_data/cat.jpg")
-#     labels = ["a cat.", "a remote control."]
-    
-#     image_array, detections = grounded_sam.predict(
-#         image=image,
-#         labels=labels
-#     )
-    
-#     # Visualize
-#     grounded_sam.visualize(image_array, detections, "./output/cute_cat.png")
-    
 if __name__=="__main__":
     
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
