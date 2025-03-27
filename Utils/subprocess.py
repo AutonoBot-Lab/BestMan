@@ -27,7 +27,7 @@ class Submodule:
     def __init__(self):
         self.data_dict = {}
     
-    def call(self, input_data, env_name, script_path):
+    def call(self, input_data, env_name, script_path, verbose=False):
         project_dir = Path(__file__).parent.parent
         script_abspath = project_dir / script_path
         print(
@@ -38,7 +38,8 @@ class Submodule:
         python = local[get_env_path(env_name)]
         cmd = python[script_abspath]
         output = cmd()
-        print(output)
+        if verbose:
+            print(output)
         
         print(
             f"[Submodule call] \033[34mInfo\033[0m: End run submodule {script_path} in {env_name}!"
