@@ -120,8 +120,11 @@ If you want to enable **pybullet-blender-recorder**, please：
 
 ## 🤝 Reference
 
-Paper describing this work has been published in Frontiers of Computer Science (FCS) special column “Code & Data”.
-Cited as:  Kui YANG, Nieqing CAO, Beichen SHAO, Xingchen WANG, Yan DING, Chao CHEN. BestMan: a modular mobile manipulator platform for embodied AI with unified simulation-hardware APIs. Front. Comput. Sci., 2025, 19(9): 199361 [https://doi.org/10.1007/s11704-025-41109-6](https://doi.org/10.1007/s11704-025-41109-6)
+Paper describing this work has been published in Frontiers of Computer Science (FCS) special column “Code & Data”. Cited as:  
+```
+Kui YANG, Nieqing CAO, Beichen SHAO, Xingchen WANG, Yan DING, Chao CHEN. BestMan: a modular mobile manipulator platform for embodied AI with unified simulation-
+hardware APIs. Front. Comput. Sci., 2025, 19(9): 199361 https://doi.org/10.1007/s11704-025-41109-6
+```
  
 
 ## 👏 Acknowledgements
